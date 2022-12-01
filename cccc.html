@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <hr id="hr"/>
+        <h1 style="font-size:25px;">Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr>
+        <h1 id="Text1">What is your age range?</h1>
+        <select id="age">
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select>
+        <h1 id="Text1">What is yearly income range?</h1>
+        <select id="age">
+            <option>$0 - $25,000</option>
+            <option>$25,001 - $50,000</option>
+            <option>$50,000 - $100,000</option>
+            <option>$100,000+</option>
+        </select>
+        <h1 id="Text1">Gender Identity</h1>
+        <input type="radio"/> Male<br>
+        <input type="radio"/> Female<br>
+        <input type="radio"/> Nonbinary<br>
+        <input type="radio"/> Other<br>
+        <h1 id="Text1">Which of the following products have your purchased in the lasst 2 months. Please check all that apply.</h1>
+        <input type="checkbox" name="Check"/> Product 1<br>
+        <input type="checkbox" name="Check"/> Product 2<br>
+        <input type="checkbox" name="Check"/> Product 3<br>
+        <h1 id="Text1">How often would you use our new product?</h1>
+        <input type="radio"/> Daily<br>
+        <input type="radio"/> Weekly<br>
+        <input type="radio"/> Monthly<br>
+        <h1 id="Text1">What would you pay for the new product?</h1>
+        <table id="Table">
+            <tr>
+                <td><b>$</td>
+                <td><input type="text" id="dollars" /></td>
+                <td style="font-size:20px">.</td>
+                <td><input type="text" id="cents"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="size">Dollars</td>
+                <td></td>
+                <td id="size">Cents</td>
+            </tr>
+        </table>
+        <h1 id="Text1">What features would you like to see in the new product.</h1>
+        <textarea id="Table1"></textarea>
+        <h1 id="Text1">Please rate your level of agreement with the following statements.</h1>
+        <table id="Table2">
+            <tr style="background-color:rgba(114, 113, 113, 0.373)">
+                <th id="th2"></th>
+                <th id="th2">Strongly Disagree</th>
+                <th id="th2">Disagree</th>
+                <th id="th2">Agree</th>
+            </tr>
+            <tr id="tr2">
+                <th id="th2">Our products are priced fairly.</th>
+                <td id="Tick1"><input type="radio"/><br>1</td>
+                <td id="Tick1"><input type="radio"/><br>2</td>
+                <td id="Tick1"><input type="radio"/><br>3</td>
+            </tr>
+<tr style="background-color:rgba(168, 167, 167, 0.373)">
+                <th id="th2">Our products are high quality.</th>
+                <td id="Tick1"><input type="radio"/><br>1</td>
+                <td id="Tick1"><input type="radio"/><br>2</td>
+                <td id="Tick1"><input type="radio"/><br>3</td>
+            </tr>
+            <tr id="tr2">
+                <th id="th2">You would recommend our product to a friend or coworker</th>
+                <td id="Tick1"><input type="radio"/><br>1</td>
+                <td id="Tick1"><input type="radio"/><br>2</td>
+                <td id="Tick1"><input type="radio"/><br>3</td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" style="font-size:20px" />
+        <style>
+            #hr{
+                height:5;
+                background-color: black;
+            }
+            #Text1{
+                font-size:15px;
+            }
+            #age{
+                width:400px;
+            }
+            #dollars{
+                width:60px;
+            }
+            #cents{
+                width:15px;
+            }
+            #size{
+                font-size:12px;
+            }
+            #Table1{
+                width:70%;
+                height:200px;
+            }
+            
+            #Table2{
+                border-collapse: collapse;
+                width:70%;
+                
+            }
+             #Tick1{
+                text-align:center;
+            }
+             #Tick1,#th2{
+                border:0.1px solid black;
+            }
+         
+            
+        </style>
+    </form>
+</body>
+</html>
